@@ -1,4 +1,4 @@
-mport scala.collection.JavaConverters._
+import scala.collection.JavaConverters._
 
 // you can write to stdout for debugging purposes, e.g.
 // println("this is a debug message")
