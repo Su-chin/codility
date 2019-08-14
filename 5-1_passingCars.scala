@@ -1,25 +1,23 @@
+/*
+scalaぽく修正したい。
+ */
 object Solution {
-
-  // 60%
   def solution (a: Array[Int]): Int = {
+    var cnt = 0
+    var east = 0
     var key = 0
-    var result = 0
     while (key < a.length) {
-      var anotherKey = key+1
-      if(a(key) == 0) {
-        while (anotherKey < a.length) {
-          var count = 0
-          if (a(anotherKey) == 1) {
-            count += 1
-          }
-          anotherKey += 1
-          //          println(s"${key}, ${anotherKey}")
-          result += count
+      if (0 == a(key)) {
+        east += 1
+      } else {
+        cnt += east
+        if (cnt > 1000000000) {
+          return -1
         }
       }
       key += 1
     }
-    result
+    cnt
   }
 }
 
