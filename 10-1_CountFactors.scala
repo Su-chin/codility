@@ -19,5 +19,5 @@ object Solution {
     }
   }
 }
-// https://www.slideshare.net/chokudai/arc034 
+// https://www.slideshare.net/chokudai/arc034
 Solution.solution(24)
