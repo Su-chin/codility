@@ -1,10 +1,12 @@
 object Solution {
   def solution(n: Array[Int], k: Int): Array[Int] = {
     if (n.isEmpty) n
-    val vector = n.toVector
-    // 繰り返しが発生しないようにする
-    val count = k % n.length
-    (vector.takeRight(count) ++ vector.dropRight(count)).toArray
+    else {
+      val vector = n.toVector
+      // 繰り返しが発生しないようにする
+      val count = k % n.length
+      (vector.takeRight(count) ++ vector.dropRight(count)).toArray
+    }
   }
 }
 
